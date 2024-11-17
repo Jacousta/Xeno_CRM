@@ -1,11 +1,13 @@
 {
-  "name": "backend",
+  "name": "xeno_crm-main",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "server": "nodemon api/server.js"
   },
   "keywords": [],
   "author": "",

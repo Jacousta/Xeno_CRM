@@ -52,7 +52,7 @@ export default function CampaignForm() {
       };
       console.log("Sending payload:", payload);
       const response = await axios.post(
-        "http://localhost:5000/api/campaigns",
+        "/api/campaigns",
         payload
       );
       console.log("Server response:", response.data);
